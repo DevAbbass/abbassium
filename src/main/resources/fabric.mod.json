@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "abbassium",
+	"version": "${version}",
+	"name": "Abbassium",
+	"description": "Small tweaks. Better Minecraft.",
+	"authors": [
+		"Abbass"
+	],
+	"contact": {
+		"sources": "https://github.com/DevAbbass/abbassium"
+	},
+	"license": "Apache-2.0",
+	"icon": "assets/abbassium/abbassium-icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"de.abbass.abbassium.client.AbbassiumClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "abbassium.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
